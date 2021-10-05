@@ -10,6 +10,7 @@ import {
 import OrderReview from './components/OrderReview/OrderReview';
 import Inventory from './components/Inventory/Inventory';
 import NotFound from './components/NotFound/NotFound';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 function App() {
   return (
     <div>
@@ -28,7 +29,10 @@ function App() {
           <Route exact path='/inventory'>
             <Inventory></Inventory>
           </Route>
-          <Route exact path='*'>
+          <Route path='/placeorder'>
+            <PlaceOrder></PlaceOrder>
+          </Route>
+          <Route path='*'>
             <NotFound></NotFound>
           </Route>
         </Switch>
